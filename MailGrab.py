@@ -23,19 +23,19 @@ import logging
 
 if __name__ == "__main__":
     if os.name in ("nt", "dos", "ce"):
-        if os.system("ping -n 1 oceanofanythingofficial.github.io > nul") == 0:
+        if os.system("ping -n 1 oceanofanything.github.io > nul") == 0:
             pass
         else:
             print("Internet Not Connected")
             exit()
     elif os.name == 'posix':
-        if os.system("curl -s oceanofanythingofficial.github.io > /dev/null") == 0:
+        if os.system("curl -s oceanofanything.github.io > /dev/null") == 0:
             pass
         else:
             print("Internet Not Connected")
             exit()
     elif os.name == 'darwin':
-        if os.system("curl -s oceanofanythingofficial.github.io > /dev/null") == 0:
+        if os.system("curl -s oceanofanything.github.io > /dev/null") == 0:
             pass
         else:
             print("Internet Not Connected")
@@ -59,9 +59,8 @@ if __name__ == "__main__":
     log.info(
         "Srapped Url List By MailGrab A Powerful Email Scraper Tool Made By OCEAN OF ANYTHING")
     log.info("This File Contains The Urls Scrapped From The Url Provided By The User")
-    log.info("https://oceanofanythingofficial.github.io")
-    log.info("https://github.com/oceanofanythingofficial")
-    log.info("https://oceanofanythingg.blogspot.com")
+    log.info("https://oceanofanything.github.io")
+    log.info("https://github.com/oceanofanything")
     log.info(f"Date Of Last Scan: {date}")
     log.info(f"Time Of Last Scan: {time1}")
 
@@ -103,7 +102,7 @@ if __name__ == "__main__":
 
     # Check If The User Is Connected To The Internet
 
-    if r.get("https://oceanofanythingofficial.github.io") == None:
+    if r.get("https://oceanofanything.github.io") == None:
         log.error("Program Closing No Internet Connection")
         console.print(sDanger + " You Are Not Connected To The Internet")
         log.error("You Are Not Connected To The Internet")
@@ -114,7 +113,7 @@ if __name__ == "__main__":
         input('')
         log.info("Press Enter To Exit")
         sys.exit()
-    elif r.get("https://oceanofanythingofficial.github.io") != None:
+    elif r.get("https://oceanofanything.github.io") != None:
         pass
     else:
         pass
@@ -387,9 +386,8 @@ if __name__ == "__main__":
                 scrappedUrlList = [
                     'Srapped Url List By MailGrab A Powerful Email Scraper Tool Made By OCEAN OF ANYTHING',
                     'This File Contains The Urls Scrapped From The Url Provided By The User',
-                    'https://oceanofanythingofficial.github.io',
-                    'https://github.com/oceanofanythingofficial',
-                    'https://oceanofanythingg.blogspot.com',
+                    'https://oceanofanything.github.io',
+                    'https://github.com/oceanofanything',
                     f'Date Of Last Scan: {date}',
                     f'Time Of Last Scan: {time3}',
                     'Scrapped Urls:'
@@ -398,9 +396,8 @@ if __name__ == "__main__":
                 emailList = [
                     'Srapped Url List By MailGrab A Powerful Email Scraper Tool Made By OCEAN OF ANYTHING',
                     'This File Contains The Emails Scrapped From The Url Provided By The User',
-                    'https://oceanofanythingofficial.github.io',
-                    'https://github.com/oceanofanythingofficial',
-                    'https://oceanofanythingg.blogspot.com',
+                    'https://oceanofanything.github.io',
+                    'https://github.com/oceanofanything',
                     f'Date Of Last Scan: {date}',
                     f'Time Of Last Scan: {time3}',
                     'Scrapped Emails:',
@@ -847,9 +844,8 @@ if __name__ == "__main__":
         scrappedUrlList = [
             'Srapped Url List By MailGrab A Powerful Email Scraper Tool Made By OCEAN OF ANYTHING',
             'This File Contains The Urls Scrapped From The Url Provided By The User',
-            'https://oceanofanythingofficial.github.io',
-            'https://github.com/oceanofanythingofficial',
-            'https://oceanofanythingg.blogspot.com',
+            'https://oceanofanything.github.io',
+            'https://github.com/oceanofanything',
             f'Date Of Last Scan: {date}',
             f'Time Of Last Scan: {time2}',
             'Scrapped Urls:'
@@ -858,9 +854,8 @@ if __name__ == "__main__":
         emailList = [
             'Srapped Url List By MailGrab A Powerful Email Scraper Tool Made By OCEAN OF ANYTHING',
             'This File Contains The Emails Scrapped From The Url Provided By The User',
-            'https://oceanofanythingofficial.github.io',
-            'https://github.com/oceanofanythingofficial',
-            'https://oceanofanythingg.blogspot.com',
+            'https://oceanofanything.github.io',
+            'https://github.com/oceanofanything',
             f'Date Of Last Scan: {date}',
             f'Time Of Last Scan: {time2}',
             'Scrapped Emails:',
