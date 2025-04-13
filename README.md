@@ -1,16 +1,16 @@
 <p align="center" width="100%">
-    <img width="100%" align="center" src="https://oceanofanythingofficial.github.io/MailGrab/thumbnail.png"/>
+    <img width="100%" align="center" src="https://oceanofanything.github.io/MailGrab/thumbnail.png"/>
     <div align="center">
     <a href="https://www.python.org/downloads/release/python-3912/" title="Go to Python homepage"><img src="https://img.shields.io/badge/Python-3.9-lemonyellow?logo=python&logoColor=white" alt="Made with Python"></a>
-      <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/OCEANOFANYTHINGOFFICIAL/MailGrab?style=flat">
+      <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oceanofanything/MailGrab?style=flat">
   <img alt="GitHub Repo Version" src="https://img.shields.io/badge/Version-2.0.0.0-brightgreen?style=flat">
   <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
   <a href="https://www.linux.org/" title="Go to Linux homepage"><img src="https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white" alt="OS - Linux"></a>
   <a href="https://www.apple.com/macos/" title="Go to Apple homepage"><img src="https://img.shields.io/badge/OS-macOS-blue?logo=apple&logoColor=white" alt="OS - macOS"></a>
   <a href="https://www.microsoft.com/" title="Go to Microsoft homepage"><img src="https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white" alt="OS - Windows"></a>
-	<a href="https://oceanofanythingofficial.github.io/MailGrab" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
+	<a href="https://oceanofanything.github.io/MailGrab" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
 	<img  src="https://img.shields.io/badge/maintained-yes-blue"  alt="maintained - yes">
-	<div><a href="https://oceanofanythingofficial.github.io/MailGrab/" title="Go to project documentation"><img src="https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge" alt="view - Documentation"></a></div>
+	<div><a href="https://oceanofanything.github.io/MailGrab/" title="Go to project documentation"><img src="https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge" alt="view - Documentation"></a></div>
    </div>
 </p>
 
@@ -39,7 +39,7 @@
 Clone The Repo From Official Page Of **OCEAN OF ANYTHING OFFICIAL** And Change Directory To MailGrab
 
 ```
-git clone https://github.com/oceanofanythingofficial/MailGrab
+git clone https://github.com/oceanofanything/MailGrab
 cd MailGrab
 ```
 
