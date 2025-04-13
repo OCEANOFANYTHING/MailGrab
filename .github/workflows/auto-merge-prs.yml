@@ -1,0 +1,68 @@
+name: Auto Merge PRs
+
+# This workflow will only run when manually triggered using the "workflow_dispatch" event
+on:
+  workflow_dispatch:
+    inputs:
+      merge_limit:
+        description: 'Maximum number of PRs to merge (default: 100)'
+        required: false
+        default: '100'
+        type: string
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Setup GitHub CLI
+        # Using the official GitHub CLI setup action
+        run: |
+          type -p curl >/dev/null || (apt update && apt install curl -y)
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+          && chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+          && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+          && apt update \
+          && apt install gh -y
+        
+      - name: Auto-merge PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_LIMIT: ${{ github.event.inputs.merge_limit }}
+          REPO: ${{ github.repository }}
+        run: |
+          echo "Starting auto-merge process for open PRs in $REPO (up to $MERGE_LIMIT PRs)"
+          
+          # Fetch all open PRs
+          OPEN_PRS=$(gh pr list --repo "$REPO" --state open --json number,title,mergeable --jq '.[] | select(.mergeable == "MERGEABLE") | {number, title}')
+          
+          # Counter for merged PRs
+          MERGED_COUNT=0
+          
+          # Process each PR
+          echo "$OPEN_PRS" | jq -c '.[]' | while read -r PR && [ $MERGED_COUNT -lt $MERGE_LIMIT ]; do
+            PR_NUMBER=$(echo "$PR" | jq -r '.number')
+            PR_TITLE=$(echo "$PR" | jq -r '.title')
+            
+            echo "Processing PR #$PR_NUMBER: $PR_TITLE"
+            
+            # Check if PR can be merged and if all checks passed
+            if gh pr view "$PR_NUMBER" --repo "$REPO" --json mergeable,mergeStateStatus | jq -e '.mergeable == true and .mergeStateStatus == "CLEAN"' > /dev/null; then
+              echo "Merging PR #$PR_NUMBER..."
+              if gh pr merge "$PR_NUMBER" --repo "$REPO" --auto --merge; then
+                echo "✅ Successfully merged PR #$PR_NUMBER"
+                MERGED_COUNT=$((MERGED_COUNT + 1))
+              else
+                echo "❌ Failed to merge PR #$PR_NUMBER"
+              fi
+            else
+              echo "⚠️ PR #$PR_NUMBER is not in a mergeable state or has pending checks"
+            fi
+            
+            # Small delay to avoid API rate limits
+            sleep 2
+          done
+          
+          echo "Completed auto-merge process. Merged $MERGED_COUNT PRs."
