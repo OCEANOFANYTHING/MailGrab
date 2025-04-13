@@ -5,7 +5,7 @@ annotated-types==0.7.0
 anyio==4.9.0
 attrs==24.2.0
 beautifulsoup4==4.13.3
-certifi==2024.8.30
+certifi==2025.1.31
 cffi==1.17.1
 charset-normalizer==3.4.0
 click==8.1.8
