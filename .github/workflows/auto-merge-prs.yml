@@ -35,14 +35,39 @@ jobs:
         run: |
           echo "Starting auto-merge process for open PRs in $REPO (up to $MERGE_LIMIT PRs)"
           
-          # Fetch all open PRs
-          OPEN_PRS=$(gh pr list --repo "$REPO" --state open --json number,title,mergeable --jq '.[] | select(.mergeable == "MERGEABLE") | {number, title}')
+          # First check if there are any open PRs at all
+          ALL_OPEN_PRS=$(gh pr list --repo "$REPO" --state open --json number,title,mergeable,mergeStateStatus)
+          OPEN_PR_COUNT=$(echo "$ALL_OPEN_PRS" | jq length)
+          
+          if [ "$OPEN_PR_COUNT" -eq 0 ]; then
+            echo "No open PRs found in the repository."
+            exit 0
+          else
+            echo "Found $OPEN_PR_COUNT open pull requests."
+            
+            # Log details about all open PRs
+            echo "$ALL_OPEN_PRS" | jq -r '.[] | "PR #\(.number) - \(.title) - Mergeable: \(.mergeable) - Status: \(.mergeStateStatus)"'
+          fi
+          
+          # Fetch mergeable PRs
+          MERGEABLE_PRS=$(echo "$ALL_OPEN_PRS" | jq '[.[] | select(.mergeable == "MERGEABLE")]')
+          MERGEABLE_COUNT=$(echo "$MERGEABLE_PRS" | jq length)
+          
+          echo "Found $MERGEABLE_COUNT PRs in a mergeable state."
+          
+          if [ "$MERGEABLE_COUNT" -eq 0 ]; then
+            echo "No PRs are currently in a mergeable state. Common reasons include:"
+            echo "- Required status checks haven't passed yet"
+            echo "- PR has merge conflicts"
+            echo "- PR requires approval reviews"
+            exit 0
+          fi
           
           # Counter for merged PRs
           MERGED_COUNT=0
           
           # Process each PR
-          echo "$OPEN_PRS" | jq -c '.[]' | while read -r PR && [ $MERGED_COUNT -lt $MERGE_LIMIT ]; do
+          echo "$MERGEABLE_PRS" | jq -c '.[]' | while read -r PR && [ $MERGED_COUNT -lt $MERGE_LIMIT ]; do
             PR_NUMBER=$(echo "$PR" | jq -r '.number')
             PR_TITLE=$(echo "$PR" | jq -r '.title')
             
@@ -58,7 +83,9 @@ jobs:
                 echo "❌ Failed to merge PR #$PR_NUMBER"
               fi
             else
-              echo "⚠️ PR #$PR_NUMBER is not in a mergeable state or has pending checks"
+              PR_STATUS=$(gh pr view "$PR_NUMBER" --repo "$REPO" --json mergeable,mergeStateStatus)
+              echo "⚠️ PR #$PR_NUMBER is not ready to be merged:"
+              echo "$PR_STATUS" | jq -r '"  Mergeable: \(.mergeable)\n  Status: \(.mergeStateStatus)"'
             fi
             
             # Small delay to avoid API rate limits
@@ -66,3 +93,11 @@ jobs:
           done
           
           echo "Completed auto-merge process. Merged $MERGED_COUNT PRs."
+          
+          if [ "$MERGED_COUNT" -eq 0 ]; then
+            echo "No PRs were merged. If you have open PRs, ensure they:"
+            echo "1. Have required status checks passing"
+            echo "2. Are approved (if required)"
+            echo "3. Have no merge conflicts"
+            echo "4. Match branch protection rules"
+          fi
