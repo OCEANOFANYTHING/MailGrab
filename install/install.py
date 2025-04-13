@@ -7,7 +7,7 @@ def osInfo():
     os_name = os.name
     if os_name in ("nt", "dos", "ce"):
         os_name = 'Windows'
-        if os.system("ping -n 1 oceanofanythingofficial.github.io > nul") == 0:
+        if os.system("ping -n 1 oceanofanything.github.io > nul") == 0:
             pass
         else:
             print("Internet Not Connected")
@@ -17,14 +17,14 @@ def osInfo():
         if os.geteuid() != 0:
             print("Please run this script as root")
             exit()
-        elif os.system("curl -s oceanofanythingofficial.github.io > /dev/null") == 0:
+        elif os.system("curl -s oceanofanything.github.io > /dev/null") == 0:
             print("Internet Connected")
         else:
             print("Internet Not Connected")
             exit()
     elif os_name == 'darwin':
         os_name = 'MacOS'
-        if os.system("curl -s oceanofanythingofficial.github.io > /dev/null") == 0:
+        if os.system("curl -s oceanofanything.github.io > /dev/null") == 0:
             pass
         else:
             print("Internet Not Connected")
