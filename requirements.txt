@@ -65,7 +65,7 @@ trio-websocket==0.11.1
 types-requests==2.32.0.20250328
 typing-inspection==0.4.0
 typing_extensions==4.12.2
-urllib3==2.2.3
+urllib3==2.4.0
 webdriver-manager==4.0.2
 websocket-client==1.8.0
 wsproto==1.2.0
