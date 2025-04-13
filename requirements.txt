@@ -7,7 +7,7 @@ attrs==25.3.0
 beautifulsoup4==4.13.3
 certifi==2025.1.31
 cffi==1.17.1
-charset-normalizer==3.4.0
+charset-normalizer==3.4.1
 click==8.1.8
 cohere==5.14.2
 collection==0.1.6
