@@ -60,7 +60,7 @@ termcolor==3.0.1
 tokenizers==0.21.1
 tomli==2.2.1
 tqdm==4.67.1
-trio==0.27.0
+trio==0.30.0
 trio-websocket==0.12.2
 types-requests==2.32.0.20250328
 typing-inspection==0.4.0
