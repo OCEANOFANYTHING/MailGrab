@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="100%" align="center" src="https://oceanofanything.github.io/MailGrab/thumbnail.png"/>
+    <img width="100%" align="center" src="https://oceanofanything.github.io/MailGrab/MailGrab.png"/>
     <div align="center">
     <a href="https://www.python.org/downloads/release/python-3912/" title="Go to Python homepage"><img src="https://img.shields.io/badge/Python-3.9-lemonyellow?logo=python&logoColor=white" alt="Made with Python"></a>
       <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oceanofanything/MailGrab?style=flat">
