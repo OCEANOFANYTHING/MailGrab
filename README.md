@@ -15,7 +15,7 @@
 </p>
 
 <div>
-  <strong>Just Provide URLs, And It Will Harvest Emails From Those Urls. Not Only One URL , It Will Automatically Find _SubURLs_ From Given URL. It Can Also Find Emails From Thousands Of URLs At One Time. Dont Have Time To Copy All Emails? No Worry! It Will Save All Emails And Harvested URLs In Saperate Text Files. Emails Will Be Saved In *`_emails.txt`* And Scrapped URLs Will Be Saved In *`_scrappedUrls.txt`*. You Can Provide A Huge List Of URLs To Be Scanned</strong>
+  <strong>Just Provide URLs, And It Will Harvest Emails From Those Urls. Not Only One URL , It Will Automatically Find _SubURLs_ From Given URL. It Can Also Find Emails From Thousands Of URLs At One Time. Dont Have Time To Copy All Emails? No Worry! It Will Save All Emails And Harvested URLs In Saperate Text Files. Emails Will Be Saved In *`_emails.txt`* And Scrapped URLs Will Be Saved In *`_scrappedUrls.txt`*. You Can Provide A Huge List Of URLs To Be Scanned. <a href="https://scriptxeno.github.io/posts/mailgrab-the-ultimate-email-scraper/">Read Full Article On This<a></strong>
 </div>
 
 
