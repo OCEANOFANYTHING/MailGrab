@@ -31,7 +31,7 @@ lxml==5.4.0
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
-multidict==6.5.1
+multidict==6.6.2
 mypy-extensions==1.1.0
 numpy==2.3.1
 opencv-python==4.11.0.86
