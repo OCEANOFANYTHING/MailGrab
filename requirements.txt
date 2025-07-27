@@ -44,7 +44,7 @@ propcache==0.3.2
 psutil==7.0.0
 pycparser==2.22
 pydantic==2.11.7
-pydantic_core==2.36.0
+pydantic_core==2.37.2
 Pygments==2.19.2
 PySocks==1.7.1
 python-dotenv==1.1.1
