@@ -29,7 +29,7 @@ imageio==2.37.0
 Jinja2==3.1.6
 lxml==5.4.0
 markdown-it-py==3.0.0
-MarkupSafe==3.0.2
+MarkupSafe==3.0.3
 mdurl==0.1.2
 multidict==6.6.4
 mypy-extensions==1.1.0
