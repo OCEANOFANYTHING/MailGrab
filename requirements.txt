@@ -63,7 +63,7 @@ tqdm==4.67.1
 trio==0.31.0
 trio-websocket==0.12.2
 types-requests==2.32.4.20250913
-typing-inspection==0.4.1
+typing-inspection==0.4.2
 typing_extensions==4.15.0
 urllib3==2.5.0
 webdriver-manager==4.0.2
