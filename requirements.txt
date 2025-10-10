@@ -3,7 +3,7 @@ aiohttp==3.13.0
 aiosignal==1.4.0
 annotated-types==0.7.0
 anyio==4.11.0
-attrs==25.3.0
+attrs==25.4.0
 beautifulsoup4==4.14.2
 certifi==2025.10.5
 cffi==1.17.1
