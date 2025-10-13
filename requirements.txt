@@ -24,7 +24,7 @@ httpcore==1.0.9
 httpx==0.28.1
 httpx-sse==0.4.3
 huggingface-hub==0.35.3
-idna==3.10
+idna==3.11
 imageio==2.37.0
 Jinja2==3.1.6
 lxml==5.4.0
