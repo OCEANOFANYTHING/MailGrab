@@ -25,7 +25,7 @@ httpx==0.28.1
 httpx-sse==0.4.3
 huggingface-hub==1.4.1
 idna==3.11
-imageio==2.37.2
+imageio==2.37.4
 Jinja2==3.1.6
 lxml==5.4.0
 markdown-it-py==3.0.0
