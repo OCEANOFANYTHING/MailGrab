@@ -47,7 +47,7 @@ pydantic==2.12.5
 pydantic_core==2.41.5
 Pygments==2.19.2
 PySocks==1.7.1
-python-dotenv==1.2.2
+python-dotenv==1.2.3
 PyYAML==6.0.3
 regex==2026.7.19
 requests==2.32.5
