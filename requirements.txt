@@ -28,7 +28,7 @@ idna==3.19
 imageio==2.37.4
 Jinja2==3.1.6
 lxml==5.4.0
-markdown-it-py==3.0.0
+markdown-it-py==4.2.0
 MarkupSafe==3.0.3
 mdurl==0.1.2
 multidict==6.7.1
