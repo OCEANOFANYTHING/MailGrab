@@ -6,8 +6,10 @@ collection
 colorama
 commonmark
 cursor
+dnspython
 idna
 lxml
+mcp==1.29.1
 mypy-extensions
 pathspec
 platformdirs
@@ -17,7 +19,6 @@ regex
 requests
 rich
 soupsieve
-termcolor
 tomli
 typing_extensions
 urllib3

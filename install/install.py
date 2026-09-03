@@ -60,8 +60,12 @@ def mainProcess():
         'colorama',
         'commonmark',
         'cursor',
+        'dnspython',
         'idna',
         'lxml',
+        # Pinned below 2.0: mcp 2.x renamed FastMCP to MCPServer and reworked the API
+        # that mailgrab_mcp_server.py is written against.
+        'mcp==1.29.1',
         'mypy-extensions',
         'pathspec',
         'platformdirs',
@@ -71,7 +75,6 @@ def mainProcess():
         'requests',
         'rich',
         'soupsieve',
-        'termcolor',
         'tomli',
         'typing_extensions',
         'urllib3'

@@ -24,7 +24,7 @@
 
   
 
-- Python 3.9 (keep Scrawling To See Installation Tutorial)
+- Python 3.9+ (keep Scrawling To See Installation Tutorial)
 
 - Windows/Linux/Mac
 
@@ -107,10 +107,6 @@ sudo apt install software-properties-common
 
   
 
-![enter image description here](https://cloudlinuxtech.com/ezoimgfmt/i1.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/install-software-properties-common-ubuntu.png?resize=1024,360&ssl=1&ezimgfmt=ng:webp/ngcb55)
-
-  
-
 2. ##### Step 2 - Add Deadsnakes Ppa Repository To Install Latest Python 3.9
 
 Open Terminal And Enter The Following Command
@@ -118,10 +114,6 @@ Open Terminal And Enter The Following Command
 ```shell
 sudo add-apt-repository ppa:deadsnakes/ppa
 ```
-
-  
-
-![add-deadsnakes-ppa](https://cloudlinuxtech.com/ezoimgfmt/i2.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/add-deadsnake-ppa-for-latest-python-1024x66.png?resize=1024%2C66&ezimgfmt=rs:640x41/rscb55/ng:webp/ngcb55)
 
   
   
@@ -133,10 +125,6 @@ sudo apt update
 ```
 
   
-
-![sudo-apt-update](https://cloudlinuxtech.com/ezoimgfmt/i1.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/sudo-apt-update.png?resize=918%2C282&ezimgfmt=rs:640x197/rscb55/ng:webp/ngcb55)
-
-  
   
 
 4. ##### Step 4 - Install latest Python 3 (Version 3.9.0)
@@ -144,10 +132,6 @@ sudo apt update
 ```
 sudo apt install python3.9
 ```
-
-  
-
-![How-to-install-Python-in-Linux](https://cloudlinuxtech.com/ezoimgfmt/i0.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/how-to-install-python-linux.png?resize=922%2C391&ezimgfmt=rs:640x271/rscb55/ng:webp/ngcb55)
 
   
   
@@ -171,10 +155,6 @@ sudo apt install python3-pip
 ```
 
   
-
-![How-to-install-Python3-pip](https://cloudlinuxtech.com/ezoimgfmt/i2.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/Install-python3-pip-using-apt-1024x425.png?resize=1024%2C425&ezimgfmt=rs:640x266/rscb55/ng:webp/ngcb55)
-
-  
   
 
 2. ##### Step 2 - Check python3-pip version
@@ -182,11 +162,6 @@ sudo apt install python3-pip
   
 
 Here pip version 20.0.2 got installed and we need to **upgrade** it to version 20.3.3. Installing package 3.8 from **apt** will help to meet all dependent packages and libraries which will be required for **pip 20.3.3**. If you will skip this step, you may get dependent modules error.
-
-  
-  
-
-![check-latest-pip-version](https://cloudlinuxtech.com/ezoimgfmt/i2.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/check-pip3-version-1.png?resize=862%2C147&ezimgfmt=rs:640x109/rscb55/ng:webp/ngcb55)
 
   
   
@@ -204,10 +179,6 @@ sudo apt install curl
 ```
 
   
-
-![install-curl](https://cloudlinuxtech.com/ezoimgfmt/i2.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/Install-curl-package-1.png?resize=883%2C416&ezimgfmt=rs:640x301/rscb55/ng:webp/ngcb55)
-
-  
   
 
 4. ##### Step 4 - Download pip from **bootstrap.pypa.io** website
@@ -217,10 +188,6 @@ Now you need to **download get pip** from bootstrap.pypa.io website using **curl
 ```shell
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 ```
-
-  
-
-![download-pip-script](https://cloudlinuxtech.com/ezoimgfmt/i0.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/Download-python3-pip-1024x167.png?resize=1024%2C167&ezimgfmt=rs:640x104/rscb55/ng:webp/ngcb55)
 
   
   
@@ -236,10 +203,6 @@ sudo python3.9 get-pip.py
 ```
 
   
-
-![Install-python3-pip-ubuntu-20.04](https://cloudlinuxtech.com/ezoimgfmt/i2.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/Install-latest-pip-20.3.3-ubuntu-20.04-1024x229.png?resize=1024%2C229&ezimgfmt=rs:640x143/rscb55/ng:webp/ngcb55)
-
-  
   
 
 6. ##### Step 6 (optional)- Add pip3.9 directory to PATH.
@@ -251,10 +214,6 @@ export PATH=~/.local/bin/:$PATH
 ```
 
   
-
-![add-pip-path-variable](https://cloudlinuxtech.com/ezoimgfmt/i0.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/Add-pip-path-variable-2-1024x79.png?resize=1024%2C79&ezimgfmt=rs:640x49/rscb55/ng:webp/ngcb55)
-
-  
   
 
 7. ##### Step 7 - Check pip version
@@ -262,10 +221,6 @@ export PATH=~/.local/bin/:$PATH
 ```shell
 pip3.9 --version
 ```
-
-  
-
-![check-pip3.9-version](https://cloudlinuxtech.com/ezoimgfmt/i2.wp.com/cloudlinuxtech.com/wp-content/uploads/2021/01/check-pip3.9-version.png?resize=1012%2C111&ezimgfmt=rs:640x70/rscb55/ng:webp/ngcb55)
 
   
   
@@ -306,11 +261,17 @@ python -m MailGrab.py
 
 MailGrab Is An Easy To Use, User Friendly, Cross Platform And Reliable Tool
 
+### Interactive Mode
+
+Just Run It And Answer The Prompts:
+
+```shell
+python MailGrab.py
+```
+
 After Launching MailGrab Just Input Url And It Will Automatically Do It's
 
-Work.
-
-It Will List All Emails And SubUrls In Terminal. It Will Save Them Also In A Text File For Future
+Work. It Will List All Emails And SubUrls In Terminal, Crawling Concurrently, Respecting `robots.txt` By Default.
 
 > ## !ProTip
 
@@ -319,6 +280,54 @@ You Can Provide A Huge List Of Urls In A File Named `_inputUrls.txt`
 . It Will Automatically Detect The File In Current Directory And Will Harvest From The Emails One By One!
 
 ***~~This Is A Sicret Please Dont Tell It To Anyone!~~***
+
+### Non-Interactive / Scripted Mode
+
+Every Prompt Has A Matching CLI Flag, So MailGrab Can Run Headless In A Script Or CI Job With No Input At All:
+
+```shell
+python MailGrab.py --url https://example.com --depth 20
+```
+
+Some Of The Most Used Flags:
+
+| Flag | What It Does |
+|---|---|
+| `--url` / `--depth` | Skip The Interactive Prompts |
+| `--input <file>` | Use A Custom Seed-Url File Instead Of `_inputUrls.txt` |
+| `--concurrency <n>` | How Many Pages To Fetch At Once |
+| `--same-domain` | Don't Wander Off The Seed Url's Own Domain |
+| `--use-sitemap` | Also Seed The Crawl From `sitemap.xml` |
+| `--verify-mx` | Drop Emails Whose Domain Has No Mail Server |
+| `--append` / `--resume` | Keep Building On A Previous Run Instead Of Starting Over |
+| `--quiet` | Print One JSON Summary Line Instead Of The Banner/Console Output |
+
+Run `python MailGrab.py --help` To See Every Flag.
+
+### Output Files
+
+MailGrab Saves Its Findings In The Current Directory Every Run:
+
+- `_emails.txt` / `_scrappedUrls.txt` — Plain Text Lists (The Classic Format)
+- `_emails.csv` — Spreadsheet-Friendly, One Row Per Email With The Url It Was Found On
+- `_results.json` — Everything In One Structured File (Emails, Urls, Sources, Social/Contact Links) — Also What `--append`/`--resume` Read Back
+- `_MailGrabLog.txt` — A Debug Log Of The Run
+
+### Want The Full Picture?
+
+MailGrab Has Grown A Lot Of Knobs — Concurrency Tuning, Rate Limiting, `robots.txt`/`Crawl-delay` Handling, De-Obfuscation, Proxy Support, And More. Every Feature, Every Flag, Every Environment Variable, And What's Actually Happening Behind The Scenes Is Documented In The **[GitHub Wiki](https://github.com/OCEANOFANYTHING/MailGrab/wiki)**.
+
+### Use MailGrab As An MCP Server
+
+MailGrab Also Ships An MCP ([Model Context Protocol](https://modelcontextprotocol.io/)) Server (`mailgrab_mcp_server.py`), So AI Coding Agents Like Claude, GitHub Copilot, Cursor, Or Codex Can Call MailGrab As A Tool Instead Of You Shelling Out To It By Hand. Each Call Runs `MailGrab.py` As Its Own Subprocess In A Private Temp Directory, So Concurrent Tool Calls Never Corrupt The Agent's Stdio Stream Or Clobber Each Other's Output Files.
+
+![MailGrab MCP server request flow: an AI agent calls the MCP server, which spawns MailGrab.py as a subprocess, which crawls the target website over HTTP(S); results flow back up the same chain.](docs/images/mcp-architecture.png)
+
+```shell
+python mailgrab_mcp_server.py
+```
+
+See The **[GitHub Wiki](https://github.com/OCEANOFANYTHING/MailGrab/wiki)**'s "MCP Server" Page For How To Point Your Agent Of Choice At It.
 
 # Attribute
 
