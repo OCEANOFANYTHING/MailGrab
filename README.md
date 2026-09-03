@@ -3,7 +3,7 @@
     <div align="center">
     <a href="https://www.python.org/downloads/release/python-3912/" title="Go to Python homepage"><img src="https://img.shields.io/badge/Python-3.9-lemonyellow?logo=python&logoColor=white" alt="Made with Python"></a>
       <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/oceanofanything/MailGrab?style=flat">
-  <img alt="GitHub Repo Version" src="https://img.shields.io/badge/Version-2.0.0.0-brightgreen?style=flat">
+  <a href="https://github.com/OCEANOFANYTHING/MailGrab/releases/tag/v2.0.0" title="Go to the v2.0.0 release"><img alt="GitHub Repo Version" src="https://img.shields.io/github/v/release/OCEANOFANYTHING/MailGrab?style=flat&color=brightgreen&label=Version"></a>
   <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
   <a href="https://www.linux.org/" title="Go to Linux homepage"><img src="https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white" alt="OS - Linux"></a>
   <a href="https://www.apple.com/macos/" title="Go to Apple homepage"><img src="https://img.shields.io/badge/OS-macOS-blue?logo=apple&logoColor=white" alt="OS - macOS"></a>
@@ -12,6 +12,10 @@
 	<img  src="https://img.shields.io/badge/maintained-yes-blue"  alt="maintained - yes">
 	<div><a href="https://oceanofanything.github.io/MailGrab/" title="Go to project documentation"><img src="https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge" alt="view - Documentation"></a></div>
    </div>
+</p>
+
+<p align="center">
+  🚀 <strong><a href="https://github.com/OCEANOFANYTHING/MailGrab/releases/tag/v2.0.0">MailGrab v2 Is Here</a> — Packed With More Firepower:</strong> Concurrent Crawling, An MCP Server For AI Agents (Claude, Copilot, Cursor, Codex), <code>robots.txt</code>-Aware Crawling, Email De-Obfuscation, MX Validation, Resume/Append Modes, And A Lot More. See The <a href="https://github.com/OCEANOFANYTHING/MailGrab/releases/tag/v2.0.0">Release Notes</a> For The Full Rundown.
 </p>
 
 <div>
