@@ -9,7 +9,7 @@ cursor
 dnspython
 idna
 lxml
-mcp==1.29.1
+mcp==1.30.0
 mypy-extensions
 pathspec
 platformdirs
