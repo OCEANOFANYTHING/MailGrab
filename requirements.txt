@@ -34,7 +34,7 @@ markdown-it-py==3.0.0
 MarkupSafe==3.0.3
 mcp==1.30.0
 mdurl==0.1.2
-multidict==6.8.0
+multidict==6.9.1
 mypy-extensions==1.1.0
 numpy==2.5.3
 opencv-python==4.14.0.94
