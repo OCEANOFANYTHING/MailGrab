@@ -69,7 +69,7 @@ sse-starlette==3.4.11
 starlette==1.6.0
 tokenizers==0.22.2
 tomli==2.4.1
-tqdm==4.67.3
+tqdm==4.70.1
 trio==0.32.0
 trio-websocket==0.12.2
 types-requests==2.32.4.20260107
