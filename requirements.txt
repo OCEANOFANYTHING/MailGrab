@@ -70,7 +70,7 @@ starlette==1.7.0
 tokenizers==0.22.2
 tomli==2.4.1
 tqdm==4.67.3
-trio==0.32.0
+trio==0.34.0
 trio-websocket==0.12.2
 types-requests==2.32.4.20260107
 typing-inspection==0.4.4
