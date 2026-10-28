@@ -11,6 +11,7 @@
 	<a href="https://oceanofanything.github.io/MailGrab" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
 	<img  src="https://img.shields.io/badge/maintained-yes-blue"  alt="maintained - yes">
 	<div><a href="https://oceanofanything.github.io/MailGrab/" title="Go to project documentation"><img src="https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge" alt="view - Documentation"></a></div>
+	<div><a href="https://ndcompany.in/open-source/mailgrab" title="Go to the MailGrab project page on ndcompany.in"><img src="https://img.shields.io/badge/view-Project_Page-blue?style=for-the-badge" alt="view - Project Page"></a></div>
    </div>
 </p>
 
@@ -336,3 +337,5 @@ See The **[GitHub Wiki](https://github.com/OCEANOFANYTHING/MailGrab/wiki)**'s "M
 # Attribute
 
 ## This Tool Mail Grab Is Made ***By OCEAN OF ANYTHING*** (***Nakshatra Ranjan Saha***)
+
+Nakshatra Ranjan Saha Is The Founder Of [N&D Co.](https://ndcompany.in/), A Brand And Growth Agency In Kolkata, India. MailGrab's Project Page, With Its Versions, Releases And Responsible Use Notes, Is At **[ndcompany.in/open-source/mailgrab](https://ndcompany.in/open-source/mailgrab)**.
