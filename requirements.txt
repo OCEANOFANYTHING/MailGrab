@@ -72,7 +72,7 @@ tomli==2.5.0
 tqdm==4.70.1
 trio==0.34.0
 trio-websocket==0.12.2
-types-requests==2.32.4.20260107
+types-requests==2.33.0.20261006
 typing-inspection==0.4.4
 typing_extensions==4.15.0
 urllib3==2.6.3
