@@ -8,7 +8,7 @@ beautifulsoup4==4.15.0
 certifi==2026.10.23
 cffi==2.1.1
 charset-normalizer==3.5.2
-click==8.5.0
+click==8.5.1
 cohere==5.21.1
 collection==0.1.6
 colorama==0.4.6
